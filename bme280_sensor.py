@@ -141,9 +141,9 @@ def get_value():
     get_calib_param()
     try:
             readData()
-            temp_str = str(sensor_data['temp'])
-            humid_str = str(sensor_data['humidity'])
-            pressure_str = str(sensor_data['pressure'])
+            temp_str = sensor_data['temp']
+            humid_str = sensor_data['humidity']
+            pressure_str = sensor_data['pressure']
 
             return temp_str, humid_str, pressure_str
     except KeyboardInterrupt:
