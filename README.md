@@ -1,5 +1,4 @@
-#coding: utf-8
+BME280
+============
 
-import bme280_sensor
-
-(temp, humi, press) = bme280_sensor.get_value()
+Python library to use BME280 on Beaglebone Black
