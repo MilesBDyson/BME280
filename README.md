@@ -12,3 +12,5 @@ Python library to use BME280 on Beaglebone Black
 | SDO            | 5         | Not Used                  |
 | SDI            | 6         | P9\_20, I2C_SDA           |
 | CS             | 7         | Not Used                  |
+
+![pins](images/BME280.jpg)
