@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import bme280_sensor
 
@@ -8,8 +8,8 @@ temp2 = bme280_sensor.get_tempc()
 humid = bme280_sensor.get_humidity()
 pressure = bme280_sensor.get_pressure()
 
-print(show)
-print("Temp: "+str(temp1)+" F")
-print("Temp: "+str(temp2)+" C")
-print("Humidity: "+str(humid)+" %")
-print("Pressure: "+str(pressure)+" hPa")
+print show
+print str(temp1) + " F"
+print str(temp2) + " C"
+print str(humid) + " %"
+print str(pressure) + " hPa"
