@@ -93,7 +93,7 @@ def compensate_P(adc_P):
 	pressure = pressure + ((v1 + v2 + digP[6]) / 16.0)  
 
 	# print "pressure : %7.2f hPa" % (pressure/100)
-        sensor_data['pressure'] = pressure/100
+	sensor_data['pressure'] = pressure/100
 
 def compensate_T(adc_T):
 	global t_fine
@@ -102,7 +102,7 @@ def compensate_T(adc_T):
 	t_fine = v1 + v2
 	temperature = t_fine / 5120.0
 	
-        sensor_data['temp'] = temperature
+	sensor_data['temp'] = temperature
 
 def compensate_H(adc_H):
 	global t_fine
@@ -117,7 +117,7 @@ def compensate_H(adc_H):
 	elif var_h < 0.0:
 		var_h = 0.0
 	
-        sensor_data['humidity'] = var_h
+	sensor_data['humidity'] = var_h
 
 def setup():
 	osrs_t = 1			#Temperature oversampling x 1
