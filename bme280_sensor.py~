@@ -102,7 +102,7 @@ def compensate_T(adc_T):
 	t_fine = v1 + v2
 	temperature = t_fine / 5120.0
 	
-	sensor_data['temp'] = temperature
+        sensor_data['temp'] = temperature
 
 def compensate_H(adc_H):
 	global t_fine
